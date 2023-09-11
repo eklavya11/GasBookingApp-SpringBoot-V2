@@ -1,0 +1,135 @@
+add cylinder
+{
+  "cylinderId": 2,
+  "price": 1000,
+  "strapColor": "RED",
+  "type": "HP",
+  "weight": 16
+}
+
+add bank
+
+{
+  "address": "string",
+  "bankId": 1,
+  "bankName": "string"
+}
+
+add customer 
+
+{
+    "addessLine1": "string",
+    "addessLine2": "string",
+    "email": "bhupatil0001@gmail.com",
+    "mobileNumber": "1234565678",
+    "pan": "bmapp5918r",
+    "password": "12345678",
+    "state": "MH",
+    "username": "USER1",
+    "zipCode": "565656",
+    "city": "MUM",
+    "country": "IND",
+    "bank": {
+        "accountNo": 45454540,
+        "addessLine1": "string",
+        "addessLine2": "string",
+        "bankName": "IDBI",
+        "city": "MUM",
+        "country": "IND",
+        "ifscNo": "SBIN0004656",
+        "state": "MH",
+        "zipCode": "121212"
+    },
+    "cylinder": {
+        "price": 680,
+        "strapColor": "RED",
+        "type": "SMALL",
+        "weight": 10
+    }
+}
+or 
+
+update customer
+
+{
+  "userId": 3,
+  "username": "USER1",
+  "password": "12345678",
+  "mobileNumber": "1234565678",
+  "addessLine1": "string",
+  "addessLine2": "string",
+  "city": "MUM",
+  "state": "MH",
+  "zipCode": "565656",
+  "country": "IND1",
+  "email": "bhupatil0001@gmail.com",
+  "pan": "bmapp5918r",
+  "cylinder": {
+    "cylinderId": 1,
+    "type": "SMALL1",
+    "weight": 10,
+    "price": 680,
+    "strapColor": "blue"
+  },
+  "bank": {
+    "bankId": 1,
+    "accountNo": 45454540,
+    "ifscNo": "SBIN0004656",
+    "bankName": "IDBI1",
+    "addessLine1": "string",
+    "addessLine2": "string",
+    "city": "MUM",
+    "state": "MH",
+    "zipCode": "121212",
+    "country": "IND"
+  }
+}
+
+insert gas booking with customer id
+
+{
+  "bill": 56780,
+  "bookingDate": "2023-02-17",
+  "gasBookingId": 0,
+  "status": true
+}
+
+
+update Gas booking 
+
+{
+  "bill": 8880,
+  "bookingDate": "2023-02-20",
+  "customerId": 3,
+  "deliveryDate": "2023-02-20",
+  "status": true
+}
+surrender cylinder
+
+{
+  "customer": {
+    "userId": 3,
+    "username": "string",
+    "password": "string",
+    "address": "string",
+    "mobileNumber": "9900123123",
+    "email": "string@gmail.com",
+    "cylinder": {
+      "cylinderId": 2,
+      "type": "HP",
+      "weight": 16,
+      "strapColor": "RED",
+      "price": 1000
+    },
+    "bank": {
+      "bankId": 1,
+      "bankName": "string",
+      "address": "string"
+    },
+    "accountNo": 23,
+    "ifscNo": "s1234",
+    "pan": "LKJKLJ23"
+  },
+  "surrenderId": 3
+}
+
